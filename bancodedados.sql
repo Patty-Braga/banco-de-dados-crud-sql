@@ -57,7 +57,7 @@ update usuarios set data_nascimento = '1991-09-29' where email = 'auctor@duiFusc
 update usuarios set data_nascimento = '1988-11-02' where email = 'nec.metus.facilisis@vitaealiquet.edu';
 
 --deleta todos os usuarios que não tenham data de nascimento cadastrado
-delete from usuarios where data_nascimento is null;
+delete from usuarios where data_nascimento is null; 
 
 --não permite mais a criação de novos usuários sem informar a data de nascimento
 alter table usuarios alter column data_nascimento set not null;
